@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- INJECT:HEAD -->
+  <!-- PAGE_TITLE: Commission a Custom Painting | Simply Create KC -->
+  <!-- PAGE_DESC: Request a custom painting from Kansas City artist Cayla Burlingame of Simply Create KC. Made to your specifications, for your space. -->
+  <!-- PAGE_CANONICAL: https://simplycreatekc.com/custom-piece/ -->
+  <!-- PAGE_OG_TITLE: Custom Art Commission | Simply Create KC -->
+  <!-- PAGE_OG_DESC: Commission a one-of-a-kind original painting from Kansas City artist Cayla Burlingame. -->
+  <!-- PAGE_SCHEMA:
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://simplycreatekc.com/"},{"@type":"ListItem","position":2,"name":"Custom Piece","item":"https://simplycreatekc.com/custom-piece/"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Service","serviceType":"Custom Art Commission","provider":{"@type":"LocalBusiness","name":"Simply Create KC","url":"https://simplycreatekc.com"},"description":"Custom paintings commissioned by Kansas City artist Cayla Burlingame."}
+  </script>
+  -->
+</head>
+<body>
+
+  <!-- INJECT:HEADER -->
+
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <span><a href="/">Home</a></span>
+        <span>Custom Piece</span>
+      </nav>
+      <span class="section-eyebrow">Commission</span>
+      <h1>A Painting Made Just for You</h1>
+      <div class="rule"></div>
+      <p class="lead">Have something specific in mind? Cayla creates custom original paintings to fit your vision, your space, and your style.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="split">
+        <div class="split-image"><div class="img-placeholder">Custom piece example</div></div>
+        <div class="split-content">
+          <span class="section-eyebrow">How It Works</span>
+          <h2>From idea to finished piece.</h2>
+          <div class="rule"></div>
+          <ol style="list-style:none; display:flex; flex-direction:column; gap:1.25rem; counter-reset:steps; padding:0;">
+            <li style="display:flex; gap:1rem;"><span style="color:var(--terracotta); font-family:var(--font-serif); font-size:1.4rem; flex-shrink:0; line-height:1.2;">01</span><div><strong>Submit your inquiry</strong><br><span style="color:var(--mid-gray); font-size:0.9rem;">Tell Cayla what you have in mind — size, style, subject, colors, where it will live.</span></div></li>
+            <li style="display:flex; gap:1rem;"><span style="color:var(--terracotta); font-family:var(--font-serif); font-size:1.4rem; flex-shrink:0; line-height:1.2;">02</span><div><strong>Consultation</strong><br><span style="color:var(--mid-gray); font-size:0.9rem;">Cayla follows up to discuss details, timeline, and pricing before anything is final.</span></div></li>
+            <li style="display:flex; gap:1rem;"><span style="color:var(--terracotta); font-family:var(--font-serif); font-size:1.4rem; flex-shrink:0; line-height:1.2;">03</span><div><strong>Deposit & creation</strong><br><span style="color:var(--mid-gray); font-size:0.9rem;">Once you're happy with the plan, a deposit secures your spot and Cayla gets to work.</span></div></li>
+            <li style="display:flex; gap:1rem;"><span style="color:var(--terracotta); font-family:var(--font-serif); font-size:1.4rem; flex-shrink:0; line-height:1.2;">04</span><div><strong>Delivery</strong><br><span style="color:var(--mid-gray); font-size:0.9rem;">Finished piece delivered or available for local pickup in Kansas City.</span></div></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INQUIRY FORM -->
+  <section style="background: var(--white); padding: 5rem 0;">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-eyebrow">Get Started</span>
+        <h2>Inquire About a Custom Piece</h2>
+        <div class="rule center"></div>
+      </div>
+      <div class="form-wrapper">
+        <form id="contact-form" action="/submit" method="POST" enctype="multipart/form-data" novalidate>
+          <input type="hidden" name="form_type" value="custom-piece">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name *</label>
+              <input type="text" id="name" name="name" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required autocomplete="email">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel">
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="canvas_size">Approximate Size</label>
+              <select id="canvas_size" name="canvas_size">
+                <option value="">Not sure yet</option>
+                <option>Small (up to 12" × 16")</option>
+                <option>Medium (16" × 20" – 20" × 24")</option>
+                <option>Large (24" × 30" and up)</option>
+                <option>Custom / discuss with Cayla</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="budget">Budget Range</label>
+              <select id="budget" name="budget">
+                <option value="">Prefer to discuss</option>
+                <option>Under $200</option>
+                <option>$200 – $500</option>
+                <option>$500 – $1,000</option>
+                <option>$1,000+</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">What would you like painted?</label>
+            <textarea id="subject" name="subject" placeholder="Describe the subject, mood, color palette, where it will hang — anything that helps Cayla understand your vision."></textarea>
+          </div>
+          <div class="form-group">
+            <label for="timeline">Do you have a timeline or deadline?</label>
+            <input type="text" id="timeline" name="timeline" placeholder="e.g. Gift for a birthday in December">
+          </div>
+          <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+          <div class="cf-turnstile" data-sitekey="TURNSTILE_SITE_KEY_PLACEHOLDER" style="margin-bottom:1.5rem;"></div>
+          <div id="form-error" class="form-error"></div>
+          <button type="submit" class="btn btn-terracotta" style="width:100%;">Send Inquiry</button>
+        </form>
+        <div id="form-success" class="form-success">
+          <h3 style="font-family:var(--font-serif); margin-bottom:0.75rem;">Inquiry received!</h3>
+          <p>Cayla will be in touch soon to talk through your vision.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INJECT:FOOTER -->
+
+</body>
+</html>

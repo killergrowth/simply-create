@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- INJECT:HEAD -->
+  <!-- PAGE_TITLE: Contact Simply Create KC | Kansas City Painting Studio -->
+  <!-- PAGE_DESC: Get in touch with Simply Create KC in Kansas City. Ask a question, book a class, or start planning your private event. -->
+  <!-- PAGE_CANONICAL: https://simplycreatekc.com/contact/ -->
+  <!-- PAGE_OG_TITLE: Contact | Simply Create KC Kansas City -->
+  <!-- PAGE_OG_DESC: Questions? Reach out to Simply Create KC — Kansas City's guided painting studio. -->
+  <!-- PAGE_SCHEMA:
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://simplycreatekc.com/"},{"@type":"ListItem","position":2,"name":"Contact","item":"https://simplycreatekc.com/contact/"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"LocalBusiness","@id":"https://simplycreatekc.com/#organization","name":"Simply Create KC","url":"https://simplycreatekc.com","email":"hello@simplycreatekc.com","address":{"@type":"PostalAddress","addressLocality":"Kansas City","addressRegion":"MO","addressCountry":"US"}}
+  </script>
+  -->
+</head>
+<body>
+
+  <!-- INJECT:HEADER -->
+
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <span><a href="/">Home</a></span>
+        <span>Contact</span>
+      </nav>
+      <span class="section-eyebrow">Say Hello</span>
+      <h1>Contact Us</h1>
+      <div class="rule"></div>
+      <p class="lead">Questions, ideas, or ready to book? We'd love to hear from you.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="split">
+        <div class="split-content">
+          <span class="section-eyebrow">Reach Out</span>
+          <h2>We'll get back to you soon.</h2>
+          <div class="rule"></div>
+          <div style="display:flex; flex-direction:column; gap:1.5rem; margin:2rem 0;">
+            <div>
+              <p style="font-size:0.75rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--mid-gray); margin-bottom:0.25rem;">Email</p>
+              <p><a href="mailto:hello@simplycreatekc.com" style="color:var(--terracotta);">hello@simplycreatekc.com</a></p>
+            </div>
+            <div>
+              <p style="font-size:0.75rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--mid-gray); margin-bottom:0.25rem;">Location</p>
+              <p>Kansas City, MO</p>
+            </div>
+            <div>
+              <p style="font-size:0.75rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--mid-gray); margin-bottom:0.25rem;">Follow Along</p>
+              <p><a href="#" style="color:var(--terracotta);">@simplycreatekc</a> on Instagram</p>
+            </div>
+          </div>
+          <div style="border-top:1px solid var(--border); padding-top:1.5rem;">
+            <p style="color:var(--mid-gray); font-size:0.9rem;">Looking for something specific?</p>
+            <div style="display:flex; gap:0.75rem; flex-wrap:wrap; margin-top:0.75rem;">
+              <a href="/classes/" class="btn btn-outline" style="font-size:0.75rem; padding:0.5rem 1rem;">Book a Class</a>
+              <a href="/private-events/" class="btn btn-outline" style="font-size:0.75rem; padding:0.5rem 1rem;">Private Events</a>
+              <a href="/custom-piece/" class="btn btn-outline" style="font-size:0.75rem; padding:0.5rem 1rem;">Custom Piece</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <form id="contact-form" action="/submit" method="POST" enctype="multipart/form-data" novalidate>
+            <input type="hidden" name="form_type" value="general-contact">
+            <div class="form-group">
+              <label for="name">Your Name *</label>
+              <input type="text" id="name" name="name" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required autocomplete="email">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone (optional)</label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel">
+            </div>
+            <div class="form-group">
+              <label for="subject">What's this about?</label>
+              <select id="subject" name="subject">
+                <option value="">Select one</option>
+                <option>Booking a class</option>
+                <option>Private event inquiry</option>
+                <option>Custom piece inquiry</option>
+                <option>Shop / purchasing artwork</option>
+                <option>Artist partnership</option>
+                <option>General question</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" required placeholder="How can we help?"></textarea>
+            </div>
+            <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+            <div class="cf-turnstile" data-sitekey="TURNSTILE_SITE_KEY_PLACEHOLDER" style="margin-bottom:1.5rem;"></div>
+            <div id="form-error" class="form-error"></div>
+            <button type="submit" class="btn btn-terracotta" style="width:100%;">Send Message</button>
+          </form>
+          <div id="form-success" class="form-success">
+            <h3 style="font-family:var(--font-serif); margin-bottom:0.75rem;">Message sent!</h3>
+            <p>Thanks for reaching out. We'll be in touch within 1–2 business days.</p>
+          </div>
+          <!-- MAP:EMBED -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INJECT:FOOTER -->
+
+</body>
+</html>
